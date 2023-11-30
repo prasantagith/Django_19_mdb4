@@ -11,11 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+import os
 TEMPLATE_DIR=os.path.join(BASE_DIR,'templates')
 STATIC_DIR_PROJECTM=os.path.join(os.path.join(BASE_DIR,'projectM'),'static')
 STATIC_DIR_APP=os.path.join(os.path.join(BASE_DIR,'app'),'static')
@@ -122,6 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS=[STATIC_DIR_PROJECTM,STATIC_DIR_APP]
 
 # Default primary key field type
